@@ -8,7 +8,14 @@
     background-size: cover;
     background-position: center;
     }
-
+    .overlay{
+        background-color: transparent;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        left: 20;
+        top: 20;
+            }
     .header_content{
         position: absolute;
         top: 10%;
@@ -21,3 +28,4 @@
     .header_content h1{
         letter-spacing: 8px;
     }
+    
