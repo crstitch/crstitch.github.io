@@ -1,3 +1,23 @@
-.nav-main-background {
-    background-color: #e3f2fd;
+.navbar-collapse {
+    justify-content: flex-end;
 }
+
+.header{
+    background-image: url('images/headerback.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .header_content{
+        position: absolute;
+        top: 15%;
+        padding: 2rem;
+        margin: auto; 
+        color: rgb(63, 3, 3);
+        min-width: 100%;
+    }
+    
+    .header_content h1{
+        letter-spacing: 8px;
+    }
