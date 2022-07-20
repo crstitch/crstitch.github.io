@@ -34,7 +34,7 @@ h1, h2, h3 {
     }
    .description {
         text-align: left;
-        font-size: 24px;
+        font-size: 16px;
    } 
    .description button {
     border:1px solid rgb(63, 3, 3);
