@@ -17,8 +17,7 @@ h1, h2, h3 {
         position: absolute;
         min-width: 100%;
         min-height: 100%;
-        left: 20;
-        top: 20;
+        
             }
     .header_content {
         position: absolute;
@@ -34,10 +33,17 @@ h1, h2, h3 {
     }
    .description {
         text-align: left;
-        font-size: 16px;
+        font-size: 24px;
    } 
-   .description button {
+   .description button, 
+   .card-footer button
+   {
     border:1px solid rgb(63, 3, 3);
     background:rgb(63, 3, 3);
     color:#fff
 } 
+.card-img {
+    height: 450px;
+}
+
+
