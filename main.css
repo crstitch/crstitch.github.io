@@ -42,8 +42,13 @@ h1, h2, h3 {
     background:rgb(63, 3, 3);
     color:#fff
 } 
-.card-img {
+.about, .cross, .beads, .process, .plan-future, .ishop {
+    margin-top: 80px;
+}
+.crstitch {
     height: 450px;
 }
 
-
+.bead {
+    height: 400px;
+}
