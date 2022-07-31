@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="images/gnicon.png">
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Вишиті картини</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,25 +24,25 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Про мене</a>
+                    <a class="nav-link" data-value="about" href="#">Про мене</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Картини хрестиком</a>
+                    <a class="nav-link" data-value="cross" href="#">Картини хрестиком</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Картини бісером</a>
+                    <a class="nav-link" data-value="beads" href="#">Картини бісером</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Процеси</a>
+                    <a class="nav-link" data-value="process" href="#">Процеси</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Плани на майбутнє</a>
+                    <a class="nav-link" data-value="plan-future" href="#">Плани на майбутнє</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Інтернет-магазини</a>
+                    <a class="nav-link" data-value="ishop" href="#">Інтернет-магазини</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Зворотній зв'язок</a>
+                    <a class="nav-link" data-value="contact" href="#">Зворотній зв'язок</a>
                 </li>
             </ul>
         </div>
@@ -58,8 +59,7 @@
                         та Інтернет-магазини,
                         де можна замовити все для створення свого чудового шедевру.
                     </p>
-                    <button class="btn btn-outline-secondary">Тож, рушаймо!</button>
-
+                    <button class="btn btn-outline-secondary" id="btnGo">Тож, рушаймо!</button>
                 </div>
 
             </div>
@@ -114,7 +114,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-outline-secondary btn-block">Детальніше</button>
+                            <button class="btn btn-outline-secondary btn-block"
+                                data-original="https://charivna-mit.com.ua/nab-r-dlya-vishivannya-hrestikom-char-vna-mit-557-quot-n-chniy-prospekt-quot">Детальніше</button>
                         </div>
                     </div>
                 </div>
@@ -138,7 +139,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-outline-secondary btn-block">Детальніше</button>
+                            <button class="btn btn-outline-secondary btn-block"
+                                data-original="https://charivna-mit.com.ua/nab-r-dlya-vishivannya-hrestikom-char-vna-mit-a-214-quot-sadiba-pershiy-sn-g-quot">Детальніше</button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +163,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-outline-secondary btn-block">Детальніше</button>
+                            <button class="btn btn-outline-secondary btn-block"
+                                data-original="https://charivna-mit.com.ua/nab-r-dlya-vishivannya-hrestikom-char-vna-mit-285-quot-chashka-kavi-quot">Детальніше</button>
                         </div>
                     </div>
                 </div>
@@ -194,7 +197,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-outline-secondary btn-block">Детальніше</button>
+                            <button class="btn btn-outline-secondary btn-block"
+                                data-original="https://www.tela-artis.com/product/predannost-0#content">Детальніше</button>
                         </div>
                     </div>
                 </div>
@@ -215,7 +219,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-outline-secondary btn-block">Детальніше</button>
+                            <button class="btn btn-outline-secondary btn-block"
+                                data-original="http://www.butter-fly.com.ua/products/175/">Детальніше</button>
                         </div>
                     </div>
                 </div>
@@ -234,7 +239,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <button class="btn btn-outline-secondary btn-block">Детальніше</button>
+                            <button class="btn btn-outline-secondary btn-block"
+                                data-original="https://charivna-mit.com.ua/nab-r-dlya-vishivannya-b-serom-char-vna-mit-b-736-quot-vandeys-kiy-basset-griffon-quot">Детальніше</button>
                         </div>
                     </div>
                 </div>
@@ -281,40 +287,48 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/pf1.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf1.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf2.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf2.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf3.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf3.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf4.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf4.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf5.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf5.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf6.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf6.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf7.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf7.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf8.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf8.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pf9.jpg" width="40%" height="40%" alt="...">
+                    <img src="images/pf9.jpg" alt="...">
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
         </div>
 
     </div>
 
     <div class="ishop" id="ishop">
+        <h2 class="text-center">Інтернет-магазини</h2>
         <div class="container">
-            <h2 class="text-center">Інтернет-магазини</h2>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <div class="img-holder">
@@ -363,7 +377,8 @@
         </div>
     </div>
 
-    <div class="contact-form">
+
+    <div class="contact-form" id="contact">
         <div class="container">
             <form>
                 <div class="row">
@@ -375,6 +390,9 @@
                             <input type="text" class="form-control form-control-lg" placeholder="Ваше ім'я" name="">
                         </div>
                         <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="+380" name="phone">
+                        </div>
+                        <div class="form-group">
                             <input type="email" class="form-control form-control-lg" placeholder="email@email.com"
                                 name="email">
                         </div>
@@ -383,6 +401,32 @@
                         </textarea>
                         </div>
                         <input type="submit" class="btn btn-secondary btn-block" value="Відправити" name="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="random-generation-form">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h2>Генератор випадкових чисел</h2>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="form-group">
+                            <input type="number" class="form-control form-control-lg" placeholder="Мінімальне число"
+                                name="min" id="min">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control form-control-lg" placeholder="Максимальне число"
+                                name="max" id="max">
+                        </div>
+                        <input type="button" class="btn btn-secondary btn-block" onclick="getRandom()"
+                            value="Отримати випадкове число">
+                        <div class="random-result alert alert-success">
+                        </div>
                     </div>
                 </div>
             </form>
