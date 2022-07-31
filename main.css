@@ -49,9 +49,14 @@ a:hover {
 
 .description {
     text-align: left;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
+@media(max-width: 1024px) {
+    .description {
+        font-size: 1.2em;
+}
+}
 .description button,
 .card-footer button,
 .contact input[type=submit] {
