@@ -87,11 +87,11 @@ a:hover {
 
 @media(min-width: 700px) {
     .crstitch {
-        height: 450px;
+        min-height: 450px;
     }
 
     .bead {
-        height: 400px;
+        min-height: 400px;
     }
 }
 
